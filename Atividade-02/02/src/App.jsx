@@ -1,5 +1,9 @@
-console.log("A");
+console.log("Início");
 
-setTimeout(() => console.log("B"), 0);
+setTimeout(() => console.log("200ms"), 200);
 
-console.log("C");
+console.log("Meio");
+
+setTimeout(() => console.log("0ms"), 0);
+
+console.log("Fim");
