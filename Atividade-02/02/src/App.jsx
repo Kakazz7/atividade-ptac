@@ -1,9 +1,9 @@
-console.log("Início");
+console.log("A");
 
-setTimeout(() => console.log("200ms"), 200);
+setTimeout(() => console.log("B"), 0);
 
-console.log("Meio");
+Promise.resolve()
+    .then(() => console.log("C"))
+    .then(() => console.log("D"));
 
-setTimeout(() => console.log("0ms"), 0);
-
-console.log("Fim");
+console.log("E");
