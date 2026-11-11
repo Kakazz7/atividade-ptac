@@ -1,7 +1,13 @@
-for (let i = 0; i < 5; i++) {
-    setTimeout(() => {
-        console.log(i);
-    }, 0);
+async function executar() {
+    console.log("Dentro da função - antes do await");
+
+    await null;
+
+    console.log("Dentro da função - depois do await");
 }
 
-console.log("Loop finalizado");
+console.log("Início");
+
+executar();
+
+console.log("Fim");
