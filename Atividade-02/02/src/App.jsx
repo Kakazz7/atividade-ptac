@@ -1,9 +1,7 @@
-console.log("A");
+for (let i = 0; i < 5; i++) {
+    setTimeout(() => {
+        console.log(i);
+    }, 0);
+}
 
-setTimeout(() => console.log("B"), 0);
-
-Promise.resolve()
-    .then(() => console.log("C"))
-    .then(() => console.log("D"));
-
-console.log("E");
+console.log("Loop finalizado");
